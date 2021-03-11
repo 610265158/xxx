@@ -95,7 +95,7 @@ class AlaskaDataIter():
 
                                       A.HueSaturationValue(hue_shift_limit=10, sat_shift_limit=20,
                                                            val_shift_limit=20, p=0.5),
-                                      A.CLAHE(clip_limit=4.0, p=0.5),
+                                      
                                       A.OneOf([
                                           A.MotionBlur(blur_limit=5),
                                           A.MedianBlur(blur_limit=5),
